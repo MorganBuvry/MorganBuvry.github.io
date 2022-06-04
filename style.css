@@ -1,0 +1,19 @@
+h1 {
+	color: red;
+}
+
+h2 {
+	color: blue;
+}
+
+p {
+	font-size: 2rem;
+	text-decoration: underline;
+	letter-spacing: 3px;
+}
+
+.paragraphe {
+	font-size: 2rem;
+	color: red;
+	text-decoration: line-through;
+}
