@@ -1,0 +1,22 @@
+footer {
+  background: $black1;
+
+  h4 {
+    color: $white1;
+    text-transform: uppercase;
+    padding-top: 25px;
+    letter-spacing: 1px;
+    font-weight: normal;
+  }
+
+  ul {
+    @include alignChildren(space-between);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+
+    @media screen and (max-width: 890px) {
+      flex-wrap: wrap;
+    }
+  }
+}

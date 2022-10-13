@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+$font1: montserrat, serif;
+$white1: rgb(247, 247, 247);
+$black1: rgb(23, 23, 23);
+$grey1: rgb(224, 224, 224);
+$color1: rgb(95, 4, 170);
+
+@mixin childCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin alignChildren($space) {
+  display: flex;
+  align-items: center;
+  justify-content: $space;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: $color1;
+}
+
+body {
+  background: white;
+  font-family: $font1;
+  text-align: center;
+}
+
+.btn {
+  color: $white1;
+  border: 1px solid $white1;
+  outline: none;
+  background: none;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-family: $font1;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
