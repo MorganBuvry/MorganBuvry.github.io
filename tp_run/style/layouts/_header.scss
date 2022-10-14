@@ -1,0 +1,24 @@
+header {
+  .header-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+
+    .text-content {
+      h1 {
+        font-size: 3rem;
+        font-weight: 100;
+      }
+
+      p {
+        padding: 25px 0;
+        font-size: 1.2rem;
+        line-height: 35px;
+      }
+    }
+  }
+
+  .header-img {
+    background: url(../img/banner.jpg) right/cover;
+  }
+}

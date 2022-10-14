@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "source sans pro";
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf);
+}
+
+$font1: source sans pro, serif;
+$grey1: rgb(218, 218, 218);
+$grey2: rgb(242, 242, 242);
+$color1: rgb(22, 202, 202);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: $font1;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 100;
+}
+
+p {
+  padding: 25px 0;
+  font-size: 1.2rem;
+  line-height: 35px;
+}
+
+img {
+  width: 100%;
+  height: 350px;
+}
+
+.btn {
+  outline: none;
+  border: 1px solid $grey1;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: $font1;
+  font-weight: 700;
+  border-radius: 50px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    border: 1px solid $color1;
+    color: $color1;
+  }
+}

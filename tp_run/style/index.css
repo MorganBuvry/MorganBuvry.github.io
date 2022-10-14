@@ -1,1 +1,100 @@
-/*# sourceMappingURL=index.css.map */
+@font-face {
+  font-family: "source sans pro";
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: source sans pro, serif;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 100;
+}
+
+p {
+  padding: 25px 0;
+  font-size: 1.2rem;
+  line-height: 35px;
+}
+
+img {
+  width: 100%;
+  height: 350px;
+}
+
+.btn {
+  outline: none;
+  border: 1px solid rgb(218, 218, 218);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: source sans pro, serif;
+  font-weight: 700;
+  border-radius: 50px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn:hover {
+  border: 1px solid rgb(22, 202, 202);
+  color: rgb(22, 202, 202);
+}
+
+header .header-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+}
+header .header-container .text-content h1 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+header .header-container .text-content p {
+  padding: 25px 0;
+  font-size: 1.2rem;
+  line-height: 35px;
+}
+header .header-img {
+  background: url(../img/banner.jpg) right/cover;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+.section1 .section-img {
+  background: url(../img/img-left.jpg) center/cover;
+  height: 350px;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: 69% 31%;
+}
+.section2 .section-img {
+  background: url(../img/img-right.jpg) center/cover;
+  height: 350px;
+}/*# sourceMappingURL=index.css.map */

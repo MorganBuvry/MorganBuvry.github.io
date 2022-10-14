@@ -1,0 +1,9 @@
+.section2 {
+  display: grid;
+  grid-template-columns: 69% 31%;
+
+  .section-img {
+    background: url(../img/img-right.jpg) center/cover;
+    height: 350px;
+  }
+}
