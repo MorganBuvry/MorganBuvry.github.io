@@ -68,6 +68,7 @@ header .header-container {
   display: grid;
   grid-template-columns: 50% 50%;
   height: 100vh;
+  border-bottom: 1px solid rgb(242, 242, 242);
 }
 header .header-container .text-content h1 {
   font-size: 3rem;
@@ -85,6 +86,7 @@ header .header-img {
 .section1 {
   display: grid;
   grid-template-columns: 35% 65%;
+  border-bottom: 1px solid rgb(242, 242, 242);
 }
 .section1 .section-img {
   background: url(../img/img-left.jpg) center/cover;
@@ -93,9 +95,101 @@ header .header-img {
 
 .section2 {
   display: grid;
-  grid-template-columns: 69% 31%;
+  grid-template-columns: 65% 35%;
+  border-bottom: 1px solid rgb(242, 242, 242);
 }
 .section2 .section-img {
   background: url(../img/img-right.jpg) center/cover;
   height: 350px;
+}
+
+.form {
+  text-align: center;
+  padding: 80px 0;
+  position: relative;
+}
+.form::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: rgb(218, 218, 218);
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.form h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.form form .form-container {
+  display: grid;
+  grid-template-areas: "name mail" "message message";
+  gap: 30px 10px;
+  min-width: 450px;
+  max-width: 600px;
+  width: 40%;
+  margin: 25px auto;
+}
+.form form .form-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form form .form-container div label {
+  font-weight: 900;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+}
+.form form .form-container div input,
+.form form .form-container div textarea {
+  outline: none;
+  background: none;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 3px;
+  width: 100%;
+}
+.form form .form-container div input:focus,
+.form form .form-container div textarea:focus {
+  border: 1px solid rgb(22, 202, 202);
+}
+.form form .form-container div input {
+  padding: 10px;
+}
+.form form .form-container div #message {
+  resize: none;
+}
+.form form .form-container .name {
+  grid-area: name;
+}
+.form form .form-container .email {
+  grid-area: mail;
+}
+.form form .form-container .message {
+  grid-area: message;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 600px;
+  width: 40%;
+  margin: 70px auto;
+}
+footer ul a {
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+footer ul a:hover {
+  border: 1px solid rgb(22, 202, 202);
+  color: rgb(22, 202, 202);
 }/*# sourceMappingURL=index.css.map */

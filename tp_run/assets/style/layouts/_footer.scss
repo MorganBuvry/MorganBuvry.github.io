@@ -1,0 +1,26 @@
+footer {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 600px;
+    width: 40%;
+    margin: 70px auto;
+
+    a {
+      border: 1px solid $grey1;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s;
+
+      &:hover {
+        border: 1px solid $color1;
+        color: $color1;
+      }
+    }
+  }
+}

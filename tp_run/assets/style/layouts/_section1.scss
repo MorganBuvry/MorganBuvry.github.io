@@ -1,6 +1,7 @@
 .section1 {
   display: grid;
   grid-template-columns: 35% 65%;
+  border-bottom: 1px solid $grey2;
 
   .section-img {
     background: url(../img/img-left.jpg) center/cover;
