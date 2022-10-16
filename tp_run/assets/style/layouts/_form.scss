@@ -26,10 +26,13 @@
         "name mail"
         "message message";
       gap: 30px 10px;
-      min-width: 400px;
+      min-width: 250px;
       max-width: 600px;
-      width: 40%;
+      width: 45%;
       margin: 25px auto;
+
+      @media screen and (max-width: 840px) {
+      }
 
       div {
         display: flex;

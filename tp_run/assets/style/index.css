@@ -80,12 +80,6 @@ header .header-container {
     grid-template-columns: 1fr;
   }
 }
-@media screen and (max-width: 840px) {
-  header .header-container .text-container {
-    height: 50vh;
-    padding: 0 10px;
-  }
-}
 header .header-container .text-container .text-content h1 {
   font-size: 3rem;
   font-weight: 100;
@@ -169,9 +163,9 @@ header .header-img {
   display: grid;
   grid-template-areas: "name mail" "message message";
   gap: 30px 10px;
-  min-width: 400px;
+  min-width: 250px;
   max-width: 600px;
-  width: 40%;
+  width: 45%;
   margin: 25px auto;
 }
 .form form .form-container div {
