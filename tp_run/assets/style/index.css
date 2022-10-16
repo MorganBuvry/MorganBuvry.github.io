@@ -163,10 +163,14 @@ header .header-img {
   display: grid;
   grid-template-areas: "name mail" "message message";
   gap: 30px 10px;
-  min-width: 250px;
   max-width: 600px;
   width: 45%;
   margin: 25px auto;
+}
+@media screen and (max-width: 595px) {
+  .form form .form-container {
+    width: 85%;
+  }
 }
 .form form .form-container div {
   display: flex;
