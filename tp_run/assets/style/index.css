@@ -31,7 +31,7 @@ a:visited {
 }
 @media screen and (max-width: 840px) {
   .text-container {
-    padding: 0 20px;
+    padding: 20px;
   }
 }
 
@@ -78,6 +78,7 @@ header .header-container {
 @media screen and (max-width: 840px) {
   header .header-container {
     grid-template-columns: 1fr;
+    border-bottom: none;
   }
 }
 header .header-container .text-container .text-content h1 {
@@ -106,7 +107,6 @@ header .header-img {
 @media screen and (max-width: 840px) {
   .section1 {
     grid-template-columns: 1fr;
-    padding: 20px 0;
   }
 }
 .section1 .section-img {
@@ -127,7 +127,6 @@ header .header-img {
 @media screen and (max-width: 840px) {
   .section2 {
     grid-template-columns: 1fr;
-    padding: 20px 0;
   }
 }
 .section2 .section-img {
