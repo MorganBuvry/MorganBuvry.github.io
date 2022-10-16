@@ -29,10 +29,15 @@ a:visited {
   align-items: center;
   padding: 0 50px;
 }
+@media screen and (max-width: 840px) {
+  .text-container {
+    padding: 0 20px;
+  }
+}
 
 h2 {
-  font-size: 1.7rem;
-  font-weight: 100;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 p {
@@ -70,11 +75,22 @@ header .header-container {
   height: 100vh;
   border-bottom: 1px solid rgb(242, 242, 242);
 }
-header .header-container .text-content h1 {
+@media screen and (max-width: 840px) {
+  header .header-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 840px) {
+  header .header-container .text-container {
+    height: 50vh;
+    padding: 0 10px;
+  }
+}
+header .header-container .text-container .text-content h1 {
   font-size: 3rem;
   font-weight: 100;
 }
-header .header-container .text-content p {
+header .header-container .text-container .text-content p {
   padding: 25px 0;
   font-size: 1.2rem;
   line-height: 35px;
@@ -82,15 +98,31 @@ header .header-container .text-content p {
 header .header-img {
   background: url(../img/banner.jpg) right/cover;
 }
+@media screen and (max-width: 840px) {
+  header .header-img {
+    height: 50vh;
+  }
+}
 
 .section1 {
   display: grid;
   grid-template-columns: 35% 65%;
   border-bottom: 1px solid rgb(242, 242, 242);
 }
+@media screen and (max-width: 840px) {
+  .section1 {
+    grid-template-columns: 1fr;
+    padding: 20px 0;
+  }
+}
 .section1 .section-img {
   background: url(../img/img-left.jpg) center/cover;
   height: 350px;
+}
+@media screen and (max-width: 840px) {
+  .section1 .section-img {
+    display: none;
+  }
 }
 
 .section2 {
@@ -98,9 +130,20 @@ header .header-img {
   grid-template-columns: 65% 35%;
   border-bottom: 1px solid rgb(242, 242, 242);
 }
+@media screen and (max-width: 840px) {
+  .section2 {
+    grid-template-columns: 1fr;
+    padding: 20px 0;
+  }
+}
 .section2 .section-img {
   background: url(../img/img-right.jpg) center/cover;
   height: 350px;
+}
+@media screen and (max-width: 840px) {
+  .section2 .section-img {
+    display: none;
+  }
 }
 
 .form {
@@ -126,7 +169,7 @@ header .header-img {
   display: grid;
   grid-template-areas: "name mail" "message message";
   gap: 30px 10px;
-  min-width: 450px;
+  min-width: 400px;
   max-width: 600px;
   width: 40%;
   margin: 25px auto;
@@ -175,6 +218,7 @@ footer ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  min-width: 250px;
   max-width: 600px;
   width: 40%;
   margin: 70px auto;
@@ -188,8 +232,20 @@ footer ul a {
   justify-content: center;
   align-items: center;
   transition: 0.5s;
+  margin-right: 10px;
+}
+@media screen and (max-width: 840px) {
+  footer ul a {
+    width: 30px;
+    height: 30px;
+  }
 }
 footer ul a:hover {
   border: 1px solid rgb(22, 202, 202);
   color: rgb(22, 202, 202);
+}
+@media screen and (max-width: 840px) {
+  footer ul a i {
+    font-size: 0.7rem;
+  }
 }/*# sourceMappingURL=index.css.map */

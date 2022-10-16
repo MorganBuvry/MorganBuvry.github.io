@@ -3,6 +3,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    min-width: 250px;
     max-width: 600px;
     width: 40%;
     margin: 70px auto;
@@ -16,10 +17,22 @@ footer {
       justify-content: center;
       align-items: center;
       transition: 0.5s;
+      margin-right: 10px;
+
+      @media screen and (max-width: 840px) {
+        width: 30px;
+        height: 30px;
+      }
 
       &:hover {
         border: 1px solid $color1;
         color: $color1;
+      }
+
+      i {
+        @media screen and (max-width: 840px) {
+          font-size: 0.7rem;
+        }
       }
     }
   }

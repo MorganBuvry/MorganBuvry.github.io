@@ -5,21 +5,35 @@ header {
     height: 100vh;
     border-bottom: 1px solid $grey2;
 
-    .text-content {
-      h1 {
-        font-size: 3rem;
-        font-weight: 100;
-      }
+    @media screen and (max-width: 840px) {
+      grid-template-columns: 1fr;
+    }
 
-      p {
-        padding: 25px 0;
-        font-size: 1.2rem;
-        line-height: 35px;
+    .text-container {
+      @media screen and (max-width: 840px) {
+        height: 50vh;
+        padding: 0 10px;
+      }
+      .text-content {
+        h1 {
+          font-size: 3rem;
+          font-weight: 100;
+        }
+
+        p {
+          padding: 25px 0;
+          font-size: 1.2rem;
+          line-height: 35px;
+        }
       }
     }
   }
 
   .header-img {
     background: url(../img/banner.jpg) right/cover;
+
+    @media screen and (max-width: 840px) {
+      height: 50vh;
+    }
   }
 }

@@ -3,8 +3,17 @@
   grid-template-columns: 35% 65%;
   border-bottom: 1px solid $grey2;
 
+  @media screen and (max-width: 840px) {
+    grid-template-columns: 1fr;
+    padding: 20px 0;
+  }
+
   .section-img {
     background: url(../img/img-left.jpg) center/cover;
     height: 350px;
+
+    @media screen and (max-width: 840px) {
+      display: none;
+    }
   }
 }
