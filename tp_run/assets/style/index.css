@@ -167,7 +167,7 @@ header .header-img {
   width: 45%;
   margin: 25px auto;
 }
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 840px) {
   .form form .form-container {
     width: 85%;
   }
