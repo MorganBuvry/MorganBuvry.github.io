@@ -10,10 +10,6 @@ header {
     }
 
     .text-container {
-      @media screen and (max-width: 840px) {
-        height: 50vh;
-        padding: 0 10px;
-      }
       .text-content {
         h1 {
           font-size: 3rem;
