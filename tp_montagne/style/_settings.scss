@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "merriweather";
+  src: url(../../fonts/Merriweather/Merriweather-Light.ttf);
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(../../fonts/Inter/static/Inter-ExtraBold.ttf);
+}
+
+$font1: merriweather, sans-serif;
+$font2: inter, serif;
+$white1: rgb(243, 243, 243);
+$white2: rgb(233, 233, 233);
+$grey1: rgb(105, 105, 105);
+$grey2: rgb(133, 133, 133);
+
+@mixin title {
+  text-transform: uppercase;
+  font-family: $font2;
+  letter-spacing: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+body {
+  text-align: center;
+  font-family: $font1;
+}
+
+.btn {
+  outline: none;
+  background: none;
+  border: 2px solid black;
+  color: black;
+  @include title;
+  letter-spacing: 2px;
+  padding: 10px 35px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    background: black;
+    color: $white1;
+  }
+}

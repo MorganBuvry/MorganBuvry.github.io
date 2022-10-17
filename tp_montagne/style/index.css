@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "merriweather";
+  src: url(../../fonts/Merriweather/Merriweather-Light.ttf);
+}
+@font-face {
+  font-family: "inter";
+  src: url(../../fonts/Inter/static/Inter-ExtraBold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+body {
+  text-align: center;
+  font-family: merriweather, sans-serif;
+}
+
+.btn {
+  outline: none;
+  background: none;
+  border: 2px solid black;
+  color: black;
+  text-transform: uppercase;
+  font-family: inter, serif;
+  letter-spacing: 5px;
+  letter-spacing: 2px;
+  padding: 10px 35px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn:hover {
+  background: black;
+  color: rgb(243, 243, 243);
+}
+
+header {
+  background: url(../images/bg.jpg) center/cover fixed;
+  position: relative;
+  color: rgb(243, 243, 243);
+}
+header .header-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+header .header-container .header-content h1 {
+  text-transform: uppercase;
+  font-family: inter, serif;
+  letter-spacing: 5px;
+  font-size: 3.7rem;
+  letter-spacing: 7px;
+}
+header .header-container .header-content p {
+  font-style: italic;
+  font-size: 0.9rem;
+  padding: 45px;
+}
+header .header-container .header-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: rgb(243, 243, 243);
+  border: 2px solid rgb(243, 243, 243);
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  background: rgba(245, 245, 245, 0.2);
+}
+header nav .nav-left {
+  display: flex;
+  width: 45%;
+}
+header nav .nav-left:hover li:not(:hover) {
+  background: none;
+  color: rgb(243, 243, 243);
+}
+header nav .nav-left li {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-family: inter, serif;
+  letter-spacing: 3px;
+  padding: 25px 13px;
+}
+header nav .nav-left li:first-child, header nav .nav-left li:hover {
+  background: rgb(243, 243, 243);
+  color: black;
+}
+header nav .nav-right {
+  display: flex;
+  justify-content: space-around;
+  width: 27%;
+}
+header nav .nav-right i {
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+header nav .nav-right i:hover {
+  color: black;
+  transform: scale(1.25);
+}
+
+main img {
+  width: 200px;
+}/*# sourceMappingURL=index.css.map */
