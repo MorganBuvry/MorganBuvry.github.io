@@ -25,6 +25,8 @@ a:visited {
 body {
   text-align: center;
   font-family: merriweather, sans-serif;
+  background: url(../images/bg.jpg) center/cover fixed;
+  margin: 0 50px;
 }
 
 .btn {
@@ -34,7 +36,6 @@ body {
   color: black;
   text-transform: uppercase;
   font-family: inter, serif;
-  letter-spacing: 5px;
   letter-spacing: 2px;
   padding: 10px 35px;
   font-size: 0.75rem;
@@ -47,8 +48,6 @@ body {
 }
 
 header {
-  background: url(../images/bg.jpg) center/cover fixed;
-  position: relative;
   color: rgb(243, 243, 243);
 }
 header .header-container {
@@ -58,11 +57,11 @@ header .header-container {
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
+  position: relative;
 }
 header .header-container .header-content h1 {
   text-transform: uppercase;
   font-family: inter, serif;
-  letter-spacing: 5px;
   font-size: 3.7rem;
   letter-spacing: 7px;
 }
@@ -82,50 +81,120 @@ header .header-container .header-content a {
   height: 55px;
   width: 55px;
 }
-header nav {
+header .header-container .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   position: absolute;
   bottom: 0;
   background: rgba(245, 245, 245, 0.2);
 }
-header nav .nav-left {
+header .header-container .nav .nav-left {
   display: flex;
   width: 45%;
 }
-header nav .nav-left:hover li:not(:hover) {
+header .header-container .nav .nav-left:hover li:not(:hover) {
   background: none;
   color: rgb(243, 243, 243);
 }
-header nav .nav-left li {
+header .header-container .nav .nav-left li {
   text-transform: uppercase;
   font-size: 0.6rem;
   font-family: inter, serif;
   letter-spacing: 3px;
   padding: 25px 13px;
 }
-header nav .nav-left li:first-child, header nav .nav-left li:hover {
+header .header-container .nav .nav-left li:first-child, header .header-container .nav .nav-left li:hover {
   background: rgb(243, 243, 243);
   color: black;
 }
-header nav .nav-right {
+header .header-container .nav .nav-right {
   display: flex;
   justify-content: space-around;
   width: 27%;
 }
-header nav .nav-right i {
+header .header-container .nav .nav-right i {
   cursor: pointer;
   transition: 0.4s ease;
 }
-header nav .nav-right i:hover {
+header .header-container .nav .nav-right i:hover {
   color: black;
   transform: scale(1.25);
 }
 
-main img {
-  width: 200px;
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: white;
+}
+main .section1 {
+  padding: 70px 50px;
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+main .section1 .date {
+  position: relative;
+}
+main .section1 .date::before, main .section1 .date::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 35%;
+  background: rgb(237, 237, 237);
+  top: 50%;
+}
+main .section1 .date::before {
+  left: 5%;
+}
+main .section1 .date::after {
+  right: 5%;
+}
+main .section1 h2 {
+  text-transform: uppercase;
+  font-family: inter, serif;
+  letter-spacing: 4px;
+  padding: 60px 0 30px;
+  font-size: 3rem;
+}
+main .section1 p {
+  font-style: italic;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  line-height: 30px;
+}
+main .section1 img {
+  width: 100%;
+  padding: 50px 70px;
+}
+main .container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+main .container .content {
+  padding: 70px;
+}
+main .container .content span {
+  font-size: 0.8rem;
+}
+main .container .content h3 {
+  text-transform: uppercase;
+  font-family: inter, serif;
+  letter-spacing: 2px;
+  padding: 25px;
+  font-size: 1.2rem;
+}
+main .container .content p {
+  text-align: left;
+  font-size: 0.8rem;
+  line-height: 30px;
+  padding: 30px 0;
+}
+main .container .content img {
+  width: 100%;
+}
+main .container .section-left {
+  border-right: 1px solid rgb(220, 220, 220);
 }/*# sourceMappingURL=index.css.map */
