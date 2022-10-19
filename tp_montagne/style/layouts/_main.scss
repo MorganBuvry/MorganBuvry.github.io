@@ -43,9 +43,12 @@ main {
       font-size: 0.8rem;
       line-height: 30px;
     }
-    img {
-      width: 100%;
-      padding: 50px 70px;
+
+    .img {
+      img {
+        width: 100%;
+        margin: 50px 0;
+      }
     }
   }
 
@@ -64,7 +67,7 @@ main {
         @include title;
         letter-spacing: 2px;
         padding: 25px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
 
       p {
