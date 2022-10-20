@@ -17,6 +17,10 @@ header {
         @include title;
         font-size: 3.7rem;
         letter-spacing: 7px;
+
+        @media screen and (max-width: 640px) {
+          font-size: 2rem;
+        }
       }
 
       p {
@@ -51,7 +55,11 @@ header {
 
       .nav-left {
         display: flex;
-        width: 45%;
+        width: 65%;
+
+        @media screen and (max-width: 640px) {
+          width: 100%;
+        }
 
         &:hover li:not(:hover) {
           background: none;
@@ -63,7 +71,8 @@ header {
           font-size: 0.6rem;
           font-family: $font2;
           letter-spacing: 3px;
-          padding: 25px 13px;
+          padding: 25px 30px;
+          transition: 0.4s;
 
           &:first-child,
           &:hover {
@@ -77,6 +86,10 @@ header {
         display: flex;
         justify-content: space-around;
         width: 27%;
+
+        @media screen and (max-width: 640px) {
+          display: none;
+        }
 
         i {
           cursor: pointer;

@@ -26,7 +26,7 @@ body {
   text-align: center;
   font-family: merriweather, sans-serif;
   background: url(../images/bg.jpg) center/cover fixed;
-  margin: 0 50px;
+  margin: 0 30px;
 }
 
 .btn {
@@ -65,6 +65,11 @@ header .header-container .header-content h1 {
   font-size: 3.7rem;
   letter-spacing: 7px;
 }
+@media screen and (max-width: 640px) {
+  header .header-container .header-content h1 {
+    font-size: 2rem;
+  }
+}
 header .header-container .header-content p {
   font-style: italic;
   font-size: 0.9rem;
@@ -94,7 +99,12 @@ header .header-container .nav {
 }
 header .header-container .nav .nav-left {
   display: flex;
-  width: 45%;
+  width: 65%;
+}
+@media screen and (max-width: 640px) {
+  header .header-container .nav .nav-left {
+    width: 100%;
+  }
 }
 header .header-container .nav .nav-left:hover li:not(:hover) {
   background: none;
@@ -105,7 +115,8 @@ header .header-container .nav .nav-left li {
   font-size: 0.6rem;
   font-family: inter, serif;
   letter-spacing: 3px;
-  padding: 25px 13px;
+  padding: 25px 30px;
+  transition: 0.4s;
 }
 header .header-container .nav .nav-left li:first-child, header .header-container .nav .nav-left li:hover {
   background: rgb(243, 243, 243);
@@ -115,6 +126,11 @@ header .header-container .nav .nav-right {
   display: flex;
   justify-content: space-around;
   width: 27%;
+}
+@media screen and (max-width: 640px) {
+  header .header-container .nav .nav-right {
+    display: none;
+  }
 }
 header .header-container .nav .nav-right i {
   cursor: pointer;
@@ -145,11 +161,26 @@ main .section1 .date::before, main .section1 .date::after {
   background: rgb(237, 237, 237);
   top: 50%;
 }
+@media screen and (max-width: 885px) {
+  main .section1 .date::before, main .section1 .date::after {
+    width: 27%;
+  }
+}
 main .section1 .date::before {
   left: 5%;
 }
+@media screen and (max-width: 640px) {
+  main .section1 .date::before {
+    left: 0;
+  }
+}
 main .section1 .date::after {
   right: 5%;
+}
+@media screen and (max-width: 640px) {
+  main .section1 .date::after {
+    right: 0;
+  }
 }
 main .section1 h2 {
   text-transform: uppercase;
@@ -158,44 +189,55 @@ main .section1 h2 {
   padding: 60px 0 30px;
   font-size: 3rem;
 }
+@media screen and (max-width: 640px) {
+  main .section1 h2 {
+    font-size: 1.7rem;
+  }
+}
 main .section1 p {
   font-style: italic;
   width: 60%;
   margin: 0 auto;
   font-size: 0.8rem;
-  line-height: 30px;
+  line-height: 35px;
 }
 main .section1 .img img {
   width: 100%;
-  margin: 50px 0;
+  padding: 50px 0;
 }
-main .container {
+main .section2 {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-main .container .content {
+@media screen and (max-width: 885px) {
+  main .section2 {
+    display: block;
+  }
+}
+main .section2 .content {
   padding: 70px;
 }
-main .container .content span {
+main .section2 .content span {
   font-size: 0.8rem;
 }
-main .container .content h3 {
+main .section2 .content h3 {
   text-transform: uppercase;
   font-family: inter, serif;
   letter-spacing: 2px;
   padding: 25px;
   font-size: 1.1rem;
+  line-height: 28px;
 }
-main .container .content p {
+main .section2 .content p {
   text-align: left;
   font-size: 0.8rem;
   line-height: 30px;
   padding: 30px 0;
 }
-main .container .content img {
+main .section2 .content img {
   width: 100%;
 }
-main .container .section-left {
+main .section2 .section-left {
   border-right: 1px solid rgb(220, 220, 220);
 }
 
@@ -207,6 +249,11 @@ footer {
 footer .footer-container {
   display: grid;
   grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 885px) {
+  footer .footer-container {
+    display: block;
+  }
 }
 footer .footer-container form {
   display: flex;
@@ -234,6 +281,10 @@ footer .footer-container form textarea {
   border-radius: 4px;
   padding: 12px 5px;
 }
+footer .footer-container form .input:focus,
+footer .footer-container form textarea:focus {
+  border: 1px solid black;
+}
 footer .footer-container form textarea {
   resize: none;
 }
@@ -256,10 +307,12 @@ footer .footer-container .contact div {
   display: grid;
   grid-template-columns: 27% 73%;
   align-items: center;
+  justify-content: center;
   border-bottom: 1px solid rgb(220, 220, 220);
+  padding: 15px 0;
 }
 footer .footer-container .contact div:first-child p {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 footer .footer-container .contact div:last-child {
   border-bottom: none;
@@ -277,6 +330,7 @@ footer .footer-container .contact div p,
 footer .footer-container .contact div ul {
   text-align: left;
   color: rgb(133, 133, 133);
+  padding-left: 20px;
 }
 footer .footer-container .contact div p {
   font-size: 0.75rem;
@@ -284,12 +338,12 @@ footer .footer-container .contact div p {
 }
 footer .footer-container .contact div .social-network {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 50%;
   min-width: 200px;
 }
 footer .footer-container .contact div .social-network li {
-  margin: 0 10px;
+  margin-right: 10px;
 }
 footer .footer-container .contact div .social-network li a {
   color: black;
