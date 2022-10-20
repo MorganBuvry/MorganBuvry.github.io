@@ -166,6 +166,11 @@ main .section1 .date::before, main .section1 .date::after {
     width: 27%;
   }
 }
+@media screen and (max-width: 640px) {
+  main .section1 .date::before, main .section1 .date::after {
+    width: 22%;
+  }
+}
 main .section1 .date::before {
   left: 5%;
 }

@@ -22,6 +22,9 @@ main {
         @media screen and (max-width: 885px) {
           width: 27%;
         }
+        @media screen and (max-width: 640px) {
+          width: 22%;
+        }
       }
 
       &::before {
