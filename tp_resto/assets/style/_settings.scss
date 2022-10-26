@@ -19,8 +19,9 @@ $font3: roboto, sans-serif;
 $black1: rgb(33, 32, 30);
 $white1: rgb(238, 238, 238);
 $grey1: rgb(200, 200, 200);
-$grey2: rgb(143, 143, 143);
-$grey3: rgb(89, 89, 89);
+$grey2: rgb(176, 176, 176);
+$grey3: rgb(143, 143, 143);
+$grey4: rgb(89, 89, 89);
 $color1: rgb(168, 115, 69);
 $color2: rgb(42, 37, 33);
 
@@ -34,6 +35,18 @@ $color2: rgb(42, 37, 33);
   display: flex;
   justify-content: $space;
   align-items: center;
+}
+
+@keyframes header {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 * {
@@ -50,6 +63,7 @@ li {
 body {
   text-align: center;
   font-family: $font3;
+  background: $black1;
 }
 
 .btn {

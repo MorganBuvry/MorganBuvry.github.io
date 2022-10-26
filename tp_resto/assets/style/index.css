@@ -10,6 +10,26 @@
   font-family: "roboto";
   src: url(../fonts/Roboto/Roboto-Light.ttf);
 }
+@-webkit-keyframes header {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes header {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +44,7 @@ li {
 body {
   text-align: center;
   font-family: roboto, sans-serif;
+  background: rgb(33, 32, 30);
 }
 
 .btn {
@@ -85,7 +106,7 @@ header .header-container nav .social li {
   cursor: pointer;
 }
 header .header-container nav .social li:hover {
-  transform: scale(1.5) rotate(360deg);
+  transform: scale(1.5) rotateX(360deg);
   color: rgb(168, 115, 69);
 }
 header .header-container .header-main {
@@ -93,6 +114,8 @@ header .header-container .header-main {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-animation: header 2s ease forwards;
+          animation: header 2s ease forwards;
 }
 header .header-container .header-main .header-main-content {
   margin-top: -160px;
@@ -119,4 +142,94 @@ header .header-container .header-main .header-main-content p {
   text-transform: uppercase;
   letter-spacing: 6px;
   font-size: 0.85rem;
+}
+
+.section1 {
+  background: rgb(238, 238, 238);
+}
+.section1 .section1-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.section1 .section1-container .section1-left {
+  padding: 15px;
+}
+.section1 .section1-container .section1-left .section1-left-content {
+  padding: 25px 15px;
+  border: 1px dashed rgb(168, 115, 69);
+}
+.section1 .section1-container .section1-left .section1-left-content h2 {
+  color: rgb(168, 115, 69);
+  font-family: allura, cursive;
+  font-weight: 100;
+  font-size: 2rem;
+}
+.section1 .section1-container .section1-left .section1-left-content h3 {
+  text-transform: uppercase;
+  font-family: poppins, serif;
+  font-size: 1.2rem;
+  margin-top: -12px;
+}
+.section1 .section1-container .section1-left .section1-left-content > img {
+  height: 28px;
+  width: 28px;
+  margin: 25px auto;
+}
+.section1 .section1-container .section1-left .section1-left-content .text {
+  font-size: 0.95rem;
+}
+.section1 .section1-container .section1-left .section1-left-content .chef-img img {
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  margin: 15px auto;
+}
+.section1 .section1-container .section1-left .section1-left-content .russel {
+  font-weight: 500;
+  font-family: poppins, serif;
+}
+.section1 .section1-container .section1-left .section1-left-content .chef-cook {
+  text-transform: uppercase;
+  color: rgb(200, 200, 200);
+  font-weight: 900;
+  font-size: 0.75rem;
+}
+.section1 .section1-container .section1-right {
+  background: url(../img/store-01.jpg) center/cover;
+}
+
+.section2 {
+  margin: 50px auto;
+}
+.section2 .section2-top {
+  padding: 10px 0 35px;
+}
+.section2 .section2-top h2 {
+  color: rgb(168, 115, 69);
+  font-family: allura, cursive;
+  font-weight: 100;
+  font-size: 2rem;
+}
+.section2 .section2-top img {
+  height: 28px;
+  width: 28px;
+  margin: 25px auto;
+}
+.section2 .section2-top ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.section2 .section2-top ul li {
+  color: rgb(200, 200, 200);
+  border-bottom: 1px solid rgb(200, 200, 200);
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.section2 .section2-top ul li:hover {
+  color: rgb(168, 115, 69);
+  border-bottom: 1px solid rgb(168, 115, 69);
 }/*# sourceMappingURL=index.css.map */

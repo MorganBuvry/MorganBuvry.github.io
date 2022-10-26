@@ -1,0 +1,66 @@
+.section1 {
+  background: $white1;
+
+  .section1-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .section1-left {
+      padding: 15px;
+
+      .section1-left-content {
+        padding: 25px 15px;
+        border: 1px dashed $color1;
+
+        h2 {
+          color: $color1;
+          font-family: $font1;
+          font-weight: 100;
+          font-size: 2rem;
+        }
+
+        h3 {
+          text-transform: uppercase;
+          font-family: $font2;
+          font-size: 1.2rem;
+          margin-top: -12px;
+        }
+
+        > img {
+          height: 28px;
+          width: 28px;
+          margin: 25px auto;
+        }
+
+        .text {
+          font-size: 0.95rem;
+        }
+
+        .chef-img {
+          img {
+            border-radius: 50px;
+            width: 60px;
+            height: 60px;
+            margin: 15px auto;
+          }
+        }
+
+        .russel {
+          font-weight: 500;
+          font-family: $font2;
+        }
+
+        .chef-cook {
+          text-transform: uppercase;
+          color: $grey1;
+          font-weight: 900;
+          font-size: 0.75rem;
+        }
+      }
+    }
+
+    .section1-right {
+      background: url(../img/store-01.jpg) center/cover;
+    }
+  }
+}

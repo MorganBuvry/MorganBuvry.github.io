@@ -48,7 +48,7 @@ header {
           cursor: pointer;
 
           &:hover {
-            transform: scale(1.5) rotate(360deg);
+            transform: scale(1.5) rotateX(360deg);
             color: $color1;
           }
         }
@@ -58,6 +58,7 @@ header {
     .header-main {
       height: 88vh;
       @include flexCenter;
+      animation: header 2s ease forwards;
 
       .header-main-content {
         margin-top: -160px;

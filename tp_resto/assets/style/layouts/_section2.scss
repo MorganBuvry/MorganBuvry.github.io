@@ -1,0 +1,39 @@
+.section2 {
+  margin: 50px auto;
+
+  .section2-top {
+    padding: 10px 0 35px;
+
+    h2 {
+      color: $color1;
+      font-family: $font1;
+      font-weight: 100;
+      font-size: 2rem;
+    }
+
+    img {
+      height: 28px;
+      width: 28px;
+      margin: 25px auto;
+    }
+
+    ul {
+      @include flexSpace(space-between);
+      max-width: 600px;
+      margin: 0 auto;
+
+      li {
+        color: $grey1;
+        border-bottom: 1px solid $grey1;
+        padding-bottom: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          color: $color1;
+          border-bottom: 1px solid $color1;
+        }
+      }
+    }
+  }
+}
