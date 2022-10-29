@@ -58,7 +58,7 @@ body {
   background: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   cursor: pointer;
   font-weight: 900;
 }
@@ -294,4 +294,275 @@ header .header-container .header-main .header-main-content p {
   color: rgb(168, 115, 69);
   font-weight: bold;
   font-size: 1.1rem;
+}
+
+.section3 {
+  max-width: 1000px;
+  margin: 80px auto;
+}
+.section3 .section3-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin: 0 20px;
+}
+.section3 .section3-container .section3-left {
+  background: black;
+  color: rgb(238, 238, 238);
+  padding: 25px;
+}
+.section3 .section3-container .section3-left .left-content {
+  padding: 20px 0 30px;
+  border: 1px dashed rgb(143, 143, 143);
+}
+.section3 .section3-container .section3-left .left-content h2 {
+  color: rgb(168, 115, 69);
+  font-family: allura, cursive;
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+.section3 .section3-container .section3-left .left-content h3 {
+  text-transform: uppercase;
+  font-family: poppins, serif;
+  font-size: 1.3rem;
+  margin-top: -17px;
+  letter-spacing: 2px;
+}
+.section3 .section3-container .section3-left .left-content img {
+  height: 28px;
+  width: 28px;
+  margin: 30px auto 40px;
+}
+.section3 .section3-container .section3-left .left-content h4 {
+  text-transform: uppercase;
+  color: rgb(168, 115, 69);
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+.section3 .section3-container .section3-left .left-content p {
+  font-size: 0.85rem;
+  padding-bottom: 40px;
+}
+.section3 .section3-container .section3-left .left-content h5 {
+  color: rgb(168, 115, 69);
+  font-size: 1.1rem;
+  font-family: poppins, serif;
+  font-weight: 100;
+}
+.section3 .section3-container .section3-right {
+  background: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section3 .section3-container .section3-right .right-content h2 {
+  color: rgb(168, 115, 69);
+  font-family: allura, cursive;
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+.section3 .section3-container .section3-right .right-content h3 {
+  text-transform: uppercase;
+  font-family: poppins, serif;
+  font-size: 1.7rem;
+  margin-top: -17px;
+  color: rgb(33, 32, 30);
+}
+.section3 .section3-container .section3-right .right-content img {
+  height: 25px;
+  width: 25px;
+  margin: 25px auto 30px;
+}
+.section3 .section3-container .section3-right .right-content form .form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.section3 .section3-container .section3-right .right-content form .form-container select,
+.section3 .section3-container .section3-right .right-content form .form-container input {
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  padding: 10px 0 13px;
+  margin: 0 10px 10px;
+}
+.section3 .section3-container .section3-right .right-content form .submit-container {
+  margin-top: 40px;
+}
+.section3 .section3-container .section3-right .right-content form .submit-container input {
+  outline: none;
+  border: none;
+  background: rgb(33, 32, 30);
+  color: rgb(238, 238, 238);
+  text-transform: uppercase;
+  font-family: poppins, serif;
+  font-size: 0.85rem;
+  letter-spacing: 4px;
+  border-radius: 50px;
+  padding: 13px 32px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.section3 .section3-container .section3-right .right-content form .submit-container input:hover {
+  transform: scale(1.1);
+  background: rgb(168, 115, 69);
+  color: rgb(33, 32, 30);
+}
+
+.section4 {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.section4 .section4-top h2 {
+  color: rgb(168, 115, 69);
+  font-family: allura, cursive;
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+.section4 .section4-top h3 {
+  text-transform: uppercase;
+  font-family: poppins, serif;
+  font-size: 2rem;
+  margin-top: -12px;
+  color: rgb(238, 238, 238);
+  letter-spacing: 2px;
+}
+.section4 .section4-top img {
+  height: 30px;
+  width: 30px;
+  margin: 30px auto;
+}
+.section4 .section4-main .container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "top right" "bottom right";
+}
+.section4 .section4-main .container .top {
+  margin-bottom: 15px;
+}
+.section4 .section4-main .container .top .img-container {
+  background: url(../img/event-01.jpg) center/cover;
+}
+.section4 .section4-main .container .bottom .img-container {
+  background: url(../img/event-02.jpg) center/cover;
+}
+.section4 .section4-main .container .left-part {
+  background: rgb(238, 238, 238);
+  display: grid;
+  grid-template-columns: 37% 63%;
+  margin-right: 15px;
+}
+.section4 .section4-main .container .left-part .img-container {
+  position: relative;
+}
+.section4 .section4-main .container .left-part .img-container .date {
+  position: absolute;
+  background: rgb(33, 32, 30);
+  color: rgb(238, 238, 238);
+  height: 85px;
+  width: 85px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section4 .section4-main .container .left-part .img-container .date .number {
+  font-weight: 900;
+  font-size: 1.6rem;
+}
+.section4 .section4-main .container .left-part .img-container .date .july {
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+.section4 .section4-main .container .left-part .text {
+  display: flex;
+  text-align: left;
+  padding: 40px 20px;
+}
+.section4 .section4-main .container .left-part .text .text-content h4 {
+  font-weight: 100;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+.section4 .section4-main .container .left-part .text .text-content .time {
+  color: rgb(200, 200, 200);
+  font-size: 0.8rem;
+  margin: 20px 0;
+  letter-spacing: 1px;
+}
+.section4 .section4-main .container .left-part .text .text-content .time i {
+  font-size: 0.8rem;
+}
+.section4 .section4-main .container .left-part .text .text-content .time i:last-child {
+  margin-left: 5px;
+}
+.section4 .section4-main .container .right-part {
+  background: url(../img/event-03.jpg) center/cover;
+  padding: 25px;
+}
+.section4 .section4-main .container .right-part .right-part-container {
+  background: rgb(238, 238, 238);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section4 .section4-main .container .right-part .right-part-container .date {
+  position: absolute;
+  background: rgb(33, 32, 30);
+  color: rgb(238, 238, 238);
+  height: 85px;
+  width: 85px;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section4 .section4-main .container .right-part .right-part-container .date .number {
+  font-weight: 900;
+  font-size: 1.6rem;
+}
+.section4 .section4-main .container .right-part .right-part-container .date .july {
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+.section4 .section4-main .container .right-part .right-part-container .text {
+  display: flex;
+}
+.section4 .section4-main .container .right-part .right-part-container .text .text-content {
+  padding: 90px 10px 0;
+}
+.section4 .section4-main .container .right-part .right-part-container .text .text-content h4 {
+  font-weight: 100;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+.section4 .section4-main .container .right-part .right-part-container .text .text-content .time {
+  color: rgb(200, 200, 200);
+  font-size: 0.8rem;
+  margin: 20px 0 60px;
+  letter-spacing: 1px;
+}
+.section4 .section4-main .container .right-part .right-part-container .text .text-content .time i {
+  font-size: 0.8rem;
+}
+.section4 .section4-main .container .right-part .right-part-container .text .text-content .time i:last-child {
+  margin-left: 5px;
+}
+.section4 .top {
+  grid-area: top;
+}
+.section4 .bottom {
+  grid-area: bottom;
+}
+.section4 .right-part {
+  grid-area: right;
 }/*# sourceMappingURL=index.css.map */
