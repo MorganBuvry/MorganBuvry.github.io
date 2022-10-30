@@ -325,6 +325,11 @@ header .header-container .header-main .header-main-content p {
   border-radius: 50%;
   width: 100%;
 }
+@media screen and (max-width: 685px) {
+  .section2 .section2-main .section2-container .menu img {
+    width: 75%;
+  }
+}
 .section2 .section2-main .section2-container .menu .text-container {
   display: flex;
   justify-content: space-around;
