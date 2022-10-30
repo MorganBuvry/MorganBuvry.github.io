@@ -1,11 +1,15 @@
 .section3 {
-  max-width: 1000px;
-  margin: 80px auto;
+  max-width: 1100px;
+  margin: 80px auto 0;
 
   .section3-container {
     display: grid;
     grid-template-columns: 30% 70%;
     margin: 0 20px;
+
+    @media screen and (max-width: 885px) {
+      display: block;
+    }
 
     .section3-left {
       background: black;
@@ -61,6 +65,7 @@
     .section3-right {
       background: $white1;
       @include flexCenter;
+      padding: 35px 0;
 
       .right-content {
         h2 {
@@ -88,6 +93,10 @@
           .form-container {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+
+            @media screen and (max-width: 685px) {
+              grid-template-columns: 1fr;
+            }
 
             select,
             input {

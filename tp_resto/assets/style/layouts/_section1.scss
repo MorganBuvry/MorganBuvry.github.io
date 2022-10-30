@@ -5,11 +5,15 @@
     display: grid;
     grid-template-columns: 50% 50%;
 
+    @media screen and (max-width: 685px) {
+      grid-template-columns: 1fr;
+    }
+
     .section1-left {
       padding: 15px;
 
       .section1-left-content {
-        padding: 25px 15px;
+        padding: 25px;
         border: 1px dashed $color1;
 
         h2 {
@@ -61,6 +65,10 @@
 
     .section1-right {
       background: url(../img/store-01.jpg) center/cover;
+
+      @media screen and (max-width: 685px) {
+        display: none;
+      }
     }
   }
 }

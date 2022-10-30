@@ -1,0 +1,59 @@
+.section5 {
+  padding: 100px 50px 200px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url(../img/gmap.jpg) center/cover;
+    width: 100%;
+    height: 330px;
+    z-index: -1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .section5-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 65px 70px;
+    background: $white1;
+    position: relative;
+
+    img {
+      position: absolute;
+      border-radius: 50%;
+      width: 60px;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .section5-content {
+      .text {
+        line-height: 28px;
+
+        &:before {
+          content: "\275D";
+          font-size: 1.5rem;
+        }
+
+        &::after {
+          content: "\275E";
+          font-size: 1.5rem;
+        }
+      }
+
+      h2 {
+        font-weight: 500;
+        margin: 40px auto 15px;
+        font-size: 1.4rem;
+      }
+
+      span {
+        color: $color1;
+      }
+    }
+  }
+}

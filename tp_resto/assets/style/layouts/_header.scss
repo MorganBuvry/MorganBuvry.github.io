@@ -12,6 +12,10 @@ header {
       grid-template-columns: 10% 80% 10%;
       margin: 0 10px;
 
+      @media screen and (max-width: 685px) {
+        grid-template-columns: 50% 50%;
+      }
+
       .title {
         @include flexCenter;
         h2 {
@@ -23,9 +27,16 @@ header {
       ul {
         @include flexSpace(space-around);
         margin-left: 20px;
+
+        @media screen and (max-width: 685px) {
+          justify-content: space-evenly;
+        }
       }
 
       .links {
+        @media screen and (max-width: 685px) {
+          display: none;
+        }
         li {
           text-transform: uppercase;
           font-size: 0.8rem;
@@ -63,11 +74,17 @@ header {
 
       .header-main-content {
         margin-top: -160px;
+        padding: 25px;
         h2 {
           color: $color1;
           font-family: $font1;
           font-size: 3.2rem;
           font-weight: 100;
+
+          @media screen and (max-width: 685px) {
+            font-size: 2rem;
+            padding-bottom: 35px;
+          }
         }
 
         h1 {
@@ -76,6 +93,10 @@ header {
           font-size: 3.4rem;
           letter-spacing: 10px;
           margin-top: -30px;
+
+          @media screen and (max-width: 685px) {
+            font-size: 2rem;
+          }
         }
 
         img {
@@ -88,6 +109,10 @@ header {
           text-transform: uppercase;
           letter-spacing: 6px;
           font-size: 0.85rem;
+
+          @media screen and (max-width: 685px) {
+            font-size: 0.75rem;
+          }
         }
       }
     }

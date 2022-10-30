@@ -1,7 +1,11 @@
 .section4 {
-  max-width: 950px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
+
+  @media screen and (max-width: 685px) {
+    display: none;
+  }
 
   .section4-top {
     h2 {
@@ -36,7 +40,7 @@
         "bottom right";
 
       .top {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         .img-container {
           background: url(../img/event-01.jpg) center/cover;
         }
@@ -52,7 +56,7 @@
         background: $white1;
         display: grid;
         grid-template-columns: 37% 63%;
-        margin-right: 15px;
+        margin-right: 20px;
 
         .img-container {
           position: relative;
@@ -94,7 +98,7 @@
 
             .time {
               color: $grey1;
-              font-size: 0.8rem;
+              font-size: 0.9rem;
               margin: 20px 0;
               letter-spacing: 1px;
 
