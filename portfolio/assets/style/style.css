@@ -34,7 +34,7 @@ h1 {
     text-align-last: left;
     line-height: 30px;
     font-size: 2rem;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 }
 
 .header-img {
@@ -76,10 +76,11 @@ footer {
 .contact {
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 50%;
     margin:auto;
     padding: 15px;
 }
+
 
 .contact i {
     margin-right: 5px;
@@ -87,6 +88,23 @@ footer {
 
 .contact a:hover {
     text-decoration: underline;
+}
+
+/* media queries */
+
+@media screen and (max-width: 850px) {
+
+    .header-img img {
+        height: 100px;
+        width: 100px;
+    }
+    .contact {
+        flex-direction: column;
+    }
+
+.contact a {
+    margin-bottom: 10px;
+}
 }
 
 
