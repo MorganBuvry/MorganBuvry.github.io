@@ -1,0 +1,52 @@
+.a-propos {
+    background: rgb(5, 0, 68);
+    color: whitesmoke;
+    padding: 60px;
+    margin: 40px 0;
+}
+
+.a-propos h2 {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: rgb(216, 0, 0);
+    letter-spacing: 2px;
+}
+
+.a-propos p {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.realisation {
+    margin: 80px 0;
+}
+
+.realisation h2 {
+    margin: 60px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+
+.realisation img {
+    width: 65%;
+    height: 40%;
+}
+
+.portfolio {
+    display: inline-block;
+    background: rgb(5, 0, 68);
+    color: white;
+    margin: 50px auto 10px;
+    padding: 20px 30px;
+    border-radius: 50px;
+}
+
+.portfolio:hover {
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
