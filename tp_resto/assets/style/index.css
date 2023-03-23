@@ -321,15 +321,16 @@ header .header-container .header-main .header-main-content p {
 }
 .section2 .section2-main .section2-container .menu .text-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: left;
-  padding: 0 10px;
+  margin: 0 10px;
 }
 .section2 .section2-main .section2-container .menu .text-container h4 {
   text-transform: uppercase;
   font-size: 0.8rem;
   padding-bottom: 5px;
+  font-weight: 400;
 }
 .section2 .section2-main .section2-container .menu span {
   display: flex;
@@ -337,7 +338,6 @@ header .header-container .header-main .header-main-content p {
   align-items: center;
   padding-right: 5px;
   color: rgb(168, 115, 69);
-  font-weight: bold;
   font-size: 1.1rem;
 }
 
