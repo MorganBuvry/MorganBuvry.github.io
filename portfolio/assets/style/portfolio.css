@@ -56,6 +56,8 @@ padding: 20px;
 
 .lien-conteneur-photos:hover .photo-hover {
     display: flex;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   /* Media queries */ 
