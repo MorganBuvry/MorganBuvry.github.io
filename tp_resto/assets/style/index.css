@@ -11,16 +11,6 @@
   font-family: "roboto";
   src: url(../fonts/Roboto/Roboto-Light.ttf);
 }
-@-webkit-keyframes header {
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 @keyframes header {
   from {
     opacity: 0;
@@ -136,8 +126,7 @@ header .header-container .header-main {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-animation: header 2s ease forwards;
-          animation: header 2s ease forwards;
+  animation: header 2s ease forwards;
 }
 header .header-container .header-main .header-main-content {
   margin-top: -160px;
