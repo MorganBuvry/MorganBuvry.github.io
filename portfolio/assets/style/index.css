@@ -49,3 +49,12 @@
     transition: 0.2s;
 }
 
+/* media queries */ 
+
+@media screen and (max-width:850px) {
+    
+    .a-propos p {
+        width: 100%;
+    }
+}
+
