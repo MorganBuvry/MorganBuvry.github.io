@@ -40,6 +40,12 @@ a:visited {
   }
 }
 
+.section1,
+.section2,
+.form {
+  box-shadow: inset 0 1px 0 $grey2;
+}
+
 h2 {
   font-size: 2rem;
   font-weight: 500;

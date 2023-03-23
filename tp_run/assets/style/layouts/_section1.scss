@@ -1,7 +1,6 @@
 .section1 {
   display: grid;
   grid-template-columns: 35% 65%;
-  border-bottom: 1px solid $grey2;
 
   @media screen and (max-width: 840px) {
     grid-template-columns: 1fr;
