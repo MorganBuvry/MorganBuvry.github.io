@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "source-sans-pro-light";
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+  font-family: "source-sans-pro-reg";
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+
+$font1: source-sans-pro-light, serif;
+$font2: source-sans-pro-reg, sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font1;
+  font-weight: 600;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 27, 73);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+p {
+  margin: 20px 0;
+  line-height: 25px;
+}
+
+li {
+  margin-bottom: 20px;
+  list-style: none;
+}
