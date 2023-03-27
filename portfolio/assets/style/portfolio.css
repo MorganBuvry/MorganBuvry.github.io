@@ -54,6 +54,10 @@ padding: 20px;
     display: none;
 }
 
+.photo-hover em {
+    font-size: 0.85em;
+}
+
 .lien-conteneur-photos:hover .photo-hover {
     display: flex;
     max-width: 600px;
