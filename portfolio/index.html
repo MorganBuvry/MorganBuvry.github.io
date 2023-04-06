@@ -1,72 +1,183 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="is-smooth-scroll-compatible is-loaded is-ready has-scroll-init has-scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    <title>Portfolio Morgan Buvry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/lib/locomotive-scroll.min.css">
     <link rel="stylesheet" href="./assets/style/style.css">
-    <link rel="stylesheet" href="./assets/style/index.css">
-    <title>Morgan Buvry - Accueil</title>
 </head>
 
 <body>
-    <header>
-        <h1>Morgan <br> Buvry</h1>
-        <div class="header-img">
-            <img src="./assets/images/ma-photo.png" alt="Photo de Morgan Buvry">
-        </div>
-        <nav>
-            <a href="./index.html">Accueil</a>
-            <a href="./portfolio.html">Portfolio</a>
-            <a href="https://morganbuvry.github.io/CV/" target="_blank">CV</a>
-        </nav>
-    </header>
+    <div data-scroll-container>
 
-    <main>
-        <section class="a-propos">
-            <h2>À propos de moi</h2>
+
+        <header data-scroll>
+            <div class="links">
+                <a href="./assets/images/CV_Morgan_Buvry_Dev_Web.pdf" target="_blank">Mon CV</a>
+                <a href="mailto:morgan.buvry@laposte.net">Contact</a>
+            </div>
+
+            <div class="wrapper">
+                <div data-scroll class="appear" id="h1-wrapper">
+                    <h1 data-scroll data-scroll-speed="3" data-scroll-position="left">Morgan Buvry</h1>
+                </div>
+            </div>
+            <div data-scroll data-scroll-repeat="true" class="wrapper" id="color">
+                <div data-scroll class="appear" id="h2-wrapper-1">
+                    <h2 data-scroll data-scroll-speed="6" data-scroll-direction="horizontal"
+                        data-scroll-position="left">Développeur Front-end</h2>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div data-scroll class="appear" id="h2-wrapper-2">
+                    <h2 data-scroll data-scroll-speed="-6" data-scroll-direction="horizontal"
+                        data-scroll-position="left" id="alternance">Recherche une alternance</h2>
+                </div>
+            </div>
+
+            <div class="scroll-wrapper">
+                <p data-scroll data-scroll-speed="-3" data-scroll-position="top">Please scroll</p>
+            </div>
+        </header>
+
+        <section class="about">
+            <div data-scroll data-scroll-speed="-1" class="img1-wrapper">
+                <div class="img img1"></div>
+            </div>
+            <div data-scroll data-scroll-speed="3" class="h2-wrapper">
+                <h2>À propos</h2>
+            </div>
             <p>
-                Après sept années comme ouvrier de transformation industrielle, j'ai décidé de me reconvertir pour
-                devenir Développeur Web.
-            </p>
-            <p>
-                Passionné d'informatique depuis l'enfance, le Front-end est une de mes passions : j'aime imaginer des
-                interfaces modernes, les dynamiser avec des animations élégantes et les rendre responsive.
+                Intéressé par la technologie et plus spécialemment l'informatique depuis l'enfance, le développement web
+                est
+                devenu ma vraie passion. Je me spécialise principalement dans le développement front-end actuellement.
+                Je
+                vous laisse voir mes réalisations un peu plus bas. <i class="fa-regular fa-face-smile"></i>
             </p>
         </section>
 
-        <section class="realisation">
-            <h2>Ma dernière réalisation</h2>
-            <div class="grid">
+        <div data-scroll class="line-wrapper">
+            <div class="line"></div>
+        </div>
 
-                <a href="https://morganbuvry.github.io/tp_resto/" target="_blank" class="lien-conteneur-photos">
-                    <img src="./assets/images/resto.png" alt="Photo d'accueil du site du resto">
-                    <div class="photo-hover">
-                        <p>
-                            The resto <br>
-                            <em>12/2022</em>
-                        </p>
+        <section class="skills">
+            <h2 class="title">
+                <span data-scroll data-scroll-speed="1">C</span>
+                <span data-scroll data-scroll-speed="0">o</span>
+                <span data-scroll data-scroll-speed="1">m</span>
+                <span data-scroll data-scroll-speed="2">p</span>
+                <span data-scroll data-scroll-speed="0">é</span>
+                <span data-scroll data-scroll-speed="1">t</span>
+                <span data-scroll data-scroll-speed="2">e</span>
+                <span data-scroll data-scroll-speed="0">n</span>
+                <span data-scroll data-scroll-speed="2">c</span>
+                <span data-scroll data-scroll-speed="1">e</span>
+                <span data-scroll data-scroll-speed="0">s</span>
+            </h2>
+
+            <div class="wrapper">
+                <div data-scroll class="appear">
+                    <p data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">HTML</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div data-scroll class="appear">
+                    <p data-scroll data-scroll-speed="1" data-scroll-direction="horizontal">
+                        CSS / SASS</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div data-scroll class="appear">
+                    <p data-scroll data-scroll-speed="-6" data-scroll-direction="horizontal">Javascript</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div data-scroll class="appear">
+                    <p data-scroll data-scroll-speed="3" data-scroll-direction="horizontal">
+                        SEO</p>
+                </div>
+            </div>
+        </section>
+
+        <div data-scroll class="line-wrapper">
+            <div class="line"></div>
+        </div>
+
+        <section class="portfolio" id="portfolio">
+            <h2 class="title">
+                <span data-scroll data-scroll-speed="2">P</span>
+                <span data-scroll data-scroll-speed="0">o</span>
+                <span data-scroll data-scroll-speed="1">r</span>
+                <span data-scroll data-scroll-speed="0">t</span>
+                <span data-scroll data-scroll-speed="1">f</span>
+                <span data-scroll data-scroll-speed="2">o</span>
+                <span data-scroll data-scroll-speed="1">l</span>
+                <span data-scroll data-scroll-speed="0">i</span>
+                <span data-scroll data-scroll-speed="2">o</span>
+            </h2>
+            <div class="projects-container">
+                <div data-scroll data-scroll-speed="1" class="project" id="p1">
+                    <img src="./assets/images/gaming-campus.png" alt="Gaming Campus">
+                    <div class="projects-infos">
+                        <a href="https://morganbuvry.github.io/gaming_campus/" target="_blank">Gaming Campus</a>
+                        <p>09/2022</p>
                     </div>
-                </a>
-            </div>
-
-            <div>
-                <a href="./portfolio.html" class="portfolio">Voir mon portfolio</a>
+                </div>
+                <div data-scroll class="project" id="p2">
+                    <img src="./assets/images/la-montagne.png" alt="La montagne">
+                    <div class="projects-infos">
+                        <a href="https://morganbuvry.github.io/tp_montagne/" target="_blank">La Montagne</a>
+                        <p>10/2022</p>
+                    </div>
+                </div>
+                <div data-scroll class="project" id="p3">
+                    <img src="./assets/images/run.png" alt="Run">
+                    <div class="projects-infos">
+                        <a href="https://morganbuvry.github.io/tp_run/" target="_blank">Run</a>
+                        <p>11/2022</p>
+                    </div>
+                </div>
+                <div data-scroll class="project" id="p4">
+                    <img src="./assets/images/resto.png" alt="The Resto">
+                    <div class="projects-infos">
+                        <a href="https://morganbuvry.github.io/tp_resto/" target="_blank">The Resto</a>
+                        <p>12/2022</p>
+                    </div>
+                </div>
             </div>
         </section>
-    </main>
 
-    <footer>
-        <h2>Contact</h2>
-        <div class="contact">
-            <a href="mailto:morgan.buvry@laposte.net"><i class="fa-solid fa-envelope"></i> morgan.buvry@laposte.net</a>
-            <a href="tel:0644937534"><i class="fa-solid fa-phone"></i>06 44 93 75 34</a>
+        <div data-scroll class="line-wrapper">
+            <div class="line"></div>
         </div>
-    </footer>
+
+        <footer>
+            <div class="wrapper">
+                <div data-scroll class="appear">
+                    <p>Des questions ?</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div data-scroll class="appear" id="l2">
+                    <p>Je serai ravi d'y <a href="mailto:morgan.buvry@laposte.net">répondre</a>.</p>
+                </div>
+            </div>
+            <div data-scroll data-scroll-speed="7" data-scroll-position="bottom" class="img-wrapper">
+                <div class="img img2"></div>
+            </div>
+            <br /><br /><br />
+        </footer>
+    </div>
+
+    <script src="./assets/lib/locomotive-scroll.min.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
