@@ -153,7 +153,7 @@ header {
 }
 
 h1 {
-  font-size: calc(1.2rem + 5vw);
+  font-size: calc(1.2rem + 4.5vw);
   margin-top: 70px;
   font-family: "manrope-bold", serif;
   letter-spacing: 6px;
@@ -161,7 +161,7 @@ h1 {
 }
 
 header h2 {
-  font-size: calc(1rem + 3.5vw);
+  font-size: calc(1rem + 3vw);
   margin: 18px 0;
   text-align-last: left;
 }
@@ -180,7 +180,7 @@ header h2 {
   color: #000101;
   border-radius: 10px;
   font-family: "manrope-reg", serif;
-  font-size: calc(1rem + 2.5vw);
+  font-size: calc(1rem + 1.4vw);
 }
 
 .scroll-wrapper {
