@@ -161,7 +161,7 @@ h1 {
 }
 
 header h2 {
-  font-size: calc(1rem + 3vw);
+  font-size: calc(1rem + 1.4vw);
   margin: 18px 0;
   text-align-last: left;
 }
@@ -180,7 +180,7 @@ header h2 {
   color: #000101;
   border-radius: 10px;
   font-family: "manrope-reg", serif;
-  font-size: calc(1rem + 1.4vw);
+  font-size: calc(0.9rem + 0.1vw);
 }
 
 .scroll-wrapper {
@@ -231,6 +231,7 @@ header h2 {
 
 .skills h2 {
   margin-bottom: 150px;
+  font-size: calc(1.2rem + 4.5vw);
 }
 
 .skills .wrapper {
