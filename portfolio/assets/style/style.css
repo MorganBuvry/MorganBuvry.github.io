@@ -163,7 +163,7 @@ h1 {
 header h2 {
   font-size: calc(1rem + 1.4vw);
   margin: 18px 0;
-  text-align-last: left;
+  text-align: left;
 }
 
 #h2-wrapper-1 {
@@ -180,7 +180,7 @@ header h2 {
   color: #000101;
   border-radius: 10px;
   font-family: "manrope-reg", serif;
-  font-size: calc(0.9rem + 0.1vw);
+  font-size: calc(1.2rem + 1.2vw);
 }
 
 .scroll-wrapper {
