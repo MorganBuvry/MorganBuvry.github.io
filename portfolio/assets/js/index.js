@@ -16,3 +16,23 @@ scroll.on("scroll", () => {
     document.body.style.color = "#000101";
   }
 });
+
+// Scroll update all pages
+
+document.addEventListener("DOMContentLoaded", function () {
+  function ScrollUpdateDelay() {
+    setTimeout(function () {
+      scroll.update();
+    }, 500);
+  }
+
+  ScrollUpdateDelay();
+});
+
+// Scroll update trigger
+
+function ScrollUpdateTrig() {
+  setTimeout(function () {
+    scroll.update();
+  }, 500);
+}
