@@ -161,7 +161,7 @@ h1 {
 }
 
 header h2 {
-  font-size: calc(1rem + 1.4vw);
+  font-size: calc(1rem + 2.5vw);
   margin: 18px 0;
   text-align: left;
 }
