@@ -1,0 +1,389 @@
+/* RÉGLAGES GÉNÉRAUX */
+@font-face {
+  font-family: "josefin-sans";
+  src: url(./assets/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "rambla";
+  src: url(./assets/fonts/Rambla/Rambla-Regular.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(217, 217, 217);
+  font-family: rambla, sans-serif;
+}
+
+section {
+  background: rgb(245, 245, 245);
+  width: 85%;
+  margin: 30px auto;
+  box-shadow: 0 0 20px rgb(187, 187, 187);
+  max-width: 1200px;
+}
+
+.container {
+  padding: 20px 40px 40px;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* HEADER & FOOTER */
+
+header,
+footer {
+  background: url(./media/header_footer_bg.jpg) center/cover;
+  height: 150px;
+}
+
+header {
+  margin-top: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid rgb(245, 245, 245);
+  box-shadow: 0 0 15px rgb(10, 10, 10);
+}
+
+h1 {
+  color: rgb(245, 245, 245);
+  font-size: 3rem;
+  font-family: josefin-sans, sans-serif;
+}
+
+/* SECTION PROFIL */
+
+.profil {
+  margin: 40px auto;
+}
+
+.profil h2 {
+  font-size: 2.2rem;
+}
+
+.profil-picture {
+  position: relative;
+}
+
+.profil-picture img {
+  position: absolute;
+  left: 50%;
+  top: -15%;
+  transform: translateX(-50%);
+  height: 150px;
+  width: 150px;
+  border-radius: 150%;
+  border: 3px solid rgb(245, 245, 245);
+  box-shadow: 0 0 10px rgb(187, 187, 187);
+}
+
+.profil-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.a-propos {
+  padding: 60px 0;
+  margin: 0 30px;
+}
+
+.typed {
+  font-size: 1.2rem;
+  line-height: 26px;
+  margin: 15px 0;
+}
+
+.a-propos a {
+  display: block;
+  background: rgb(248, 175, 38);
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 0 10px rgb(10, 10, 10);
+  margin-top: 30px;
+  transition: 0.3s;
+  border: 1px solid rgb(248, 175, 38);
+}
+
+.a-propos a:hover {
+  background: rgb(245, 245, 245);
+  border: 1px solid rgb(248, 175, 38);
+}
+
+.contact {
+  border-left: 2px solid rgb(217, 217, 217);
+  padding: 60px 30px 20px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  margin-top: -25px;
+}
+
+.contact-alignement {
+  margin-top: -40px;
+}
+
+.contact-grid h5,
+.contact-grid p,
+.contact-grid a {
+  font-size: 1.1rem;
+}
+
+.contact-grid p,
+.contact-grid a {
+  margin-left: 10px;
+}
+
+.contact-grid a:hover {
+  color: rgb(248, 175, 38);
+  text-decoration: underline;
+}
+
+.social ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 30px auto;
+}
+
+.social li {
+  font-size: 1.7rem;
+  margin: 0 5px;
+}
+
+.social i {
+  box-shadow: 0 0 10px rgb(10, 10, 10);
+  color: rgb(245, 245, 245);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-facebook-f {
+  background: rgb(8, 121, 233);
+}
+
+.fa-linkedin-in {
+  background: rgb(10, 102, 194);
+}
+
+.fa-github {
+  background: rgb(10, 10, 10);
+}
+
+/* SECTION EXPERIENCES PROFESSIONNELLES & SECTION FORMATION */
+
+.container {
+  padding: 20px 40px 40px;
+}
+
+.container h2 {
+  font-size: 2.1rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.grid-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.grid-img img {
+  width: 100%;
+}
+
+#school-img {
+  padding: 20px;
+}
+
+.grid-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 35px;
+}
+
+.text-title {
+  margin-bottom: 35px;
+}
+
+.text-title p {
+  margin-top: -16px;
+}
+
+.text-description ul {
+  padding-left: 0;
+}
+
+.text-description li {
+  line-height: 25px;
+}
+
+/* SECTION COMPETENCES */
+
+/* GLOBAL SETTINGS */
+
+.competences-container {
+  padding: 20px 40px 40px;
+}
+
+.competences-container h2 {
+  font-size: 2.1rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.competences-container h3 {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+
+.progressbar-wrapper {
+  background: rgb(187, 187, 187);
+  color: rgb(245, 245, 245);
+  width: 100%;
+  border-radius: 10px;
+}
+/* PROFESSIONNAL PART */
+
+.professionnal-competences p {
+  margin: 0;
+}
+
+.professionnal-grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 10px;
+}
+
+.progressbar-pro {
+  background: rgb(27, 114, 243);
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  text-align: right;
+}
+
+.html {
+  width: 75%;
+}
+
+.css {
+  width: 65%;
+}
+
+.javascript {
+  width: 25%;
+}
+
+.seo {
+  width: 85%;
+}
+
+/* PERSONNAL PART */
+
+.progressbar-personnal {
+  background: rgb(10, 102, 194);
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  text-align: right;
+}
+
+.autonomie,
+.equipe {
+  width: 85%;
+}
+
+.organisation {
+  width: 90%;
+}
+
+.adaptabilite {
+  width: 95%;
+}
+
+/* BUTTON PORTFOLIO */
+
+.competences-container a {
+  display: block;
+  background: rgb(248, 175, 38);
+  width: 40%;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 0 10px rgb(10, 10, 10);
+  margin: 50px auto 30px;
+  transition: 0.3s;
+  border: 1px solid rgb(248, 175, 38);
+  font-family: rambla, sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.competences-container a:hover {
+  background: rgb(245, 245, 245);
+  border: 1px solid rgb(248, 175, 38);
+}
+
+/* CENTRE D'INTERETS PART */
+
+.centres-interet-flex ul {
+  margin: 40px auto 30px;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.centres-interet-flex li {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centres-interet-flex img {
+  width: 65%;
+  border-radius: 150%;
+  box-shadow: 0 0 10px rgb(10, 10, 10);
+}
+
+.centres-interet-flex p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* RESPONSIVE */
