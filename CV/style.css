@@ -72,6 +72,10 @@ h1 {
   font-family: josefin-sans, sans-serif;
 }
 
+footer {
+  border-top: 3px solid rgb(245, 245, 245);
+}
+
 /* SECTION PROFIL */
 
 .profil {
@@ -109,8 +113,8 @@ h1 {
   margin: 0 30px;
 }
 
-.typed {
-  font-size: 1.2rem;
+#typedText {
+  font-size: 1.15rem;
   line-height: 26px;
   margin: 15px 0;
 }
