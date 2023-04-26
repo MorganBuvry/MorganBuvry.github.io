@@ -33,6 +33,12 @@ section {
   padding: 20px 40px 40px;
 }
 
+.container h2 {
+  font-size: 2.1rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
 li {
   list-style: none;
 }
@@ -83,9 +89,8 @@ h1 {
 .profil-picture img {
   position: absolute;
   left: 50%;
-  top: -15%;
-  transform: translateX(-50%);
-  height: 150px;
+  top: 0;
+  transform: translate(-50%, -50%);
   width: 150px;
   border-radius: 150%;
   border: 3px solid rgb(245, 245, 245);
@@ -165,6 +170,7 @@ h1 {
   justify-content: space-between;
   width: 90%;
   margin: 30px auto;
+  padding-left: 0;
 }
 
 .social li {
@@ -197,20 +203,11 @@ h1 {
 
 /* SECTION EXPERIENCES PROFESSIONNELLES & SECTION FORMATION */
 
-.container {
-  padding: 20px 40px 40px;
-}
-
-.container h2 {
-  font-size: 2.1rem;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 15% 85%;
   border-bottom: 1px solid rgb(187, 187, 187);
+  padding-bottom: 20px;
 }
 
 .grid-img {
@@ -243,14 +240,6 @@ h1 {
   margin-top: -16px;
 }
 
-.text-description ul {
-  padding-left: 0;
-}
-
-.text-description li {
-  line-height: 25px;
-}
-
 /* SECTION COMPETENCES */
 
 /* GLOBAL SETTINGS */
@@ -271,29 +260,37 @@ h1 {
 }
 
 .progressbar-wrapper {
+  flex: 0 0 100%;
+  height: 1.5rem;
+  border-radius: 10px;
   background: rgb(187, 187, 187);
-  color: rgb(245, 245, 245);
-  width: 100%;
+}
+
+.progressbar {
+  display: block;
+  height: 100%;
   border-radius: 10px;
 }
+
 /* PROFESSIONNAL PART */
 
 .professionnal-competences p {
   margin: 0;
+  text-align-last: left;
 }
 
 .professionnal-grid {
   display: grid;
   grid-template-columns: 40% 60%;
+  align-items: center;
   margin-bottom: 10px;
 }
 
-.progressbar-pro {
+.html,
+.css,
+.javascript,
+.seo {
   background: rgb(27, 114, 243);
-  padding: 10px;
-  font-size: 15px;
-  border-radius: 10px;
-  text-align: right;
 }
 
 .html {
@@ -313,13 +310,15 @@ h1 {
 }
 
 /* PERSONNAL PART */
+.personnal {
+  height: 0.5rem;
+}
 
-.progressbar-personnal {
-  background: rgb(10, 102, 194);
-  padding: 10px;
-  font-size: 15px;
-  border-radius: 10px;
-  text-align: right;
+.autonomie,
+.equipe,
+.organisation,
+.adaptabilite {
+  background: rgb(27, 114, 243);
 }
 
 .autonomie,
@@ -359,31 +358,93 @@ h1 {
 
 /* CENTRE D'INTERETS PART */
 
-.centres-interet-flex ul {
-  margin: 40px auto 30px;
-  width: 85%;
+.centres-interet {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 0;
+  flex-flow: row wrap;
 }
 
-.centres-interet-flex li {
-  margin: 0 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.centres-interet h2 {
+  margin: 20px auto;
+  width: 90%;
+  text-align: center;
+  font-size: 2.1rem;
 }
 
-.centres-interet-flex img {
-  width: 65%;
-  border-radius: 150%;
+.interet {
+  display: flex;
+  flex: 0 1 25%;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.interet img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   box-shadow: 0 0 10px rgb(10, 10, 10);
 }
 
-.centres-interet-flex p {
-  text-align: center;
-  font-size: 1.1rem;
+figcaption {
+  margin-top: 15px;
 }
 
 /* RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+  /* PARAMETRES GENERAUX */
+  body {
+    text-align: center;
+  }
+
+  .profil h2,
+  .container h2,
+  .centres-interet h2 {
+    font-size: 1.9rem;
+  }
+
+  .container h2 {
+    border-bottom: 2px solid rgb(217, 217, 217);
+    padding-bottom: 30px;
+  }
+
+  /* HEADER */
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  /* SECTION PROFIL */
+  .profil-container {
+    display: block;
+  }
+
+  .a-propos h2 {
+    margin-top: 40px;
+  }
+
+  .contact {
+    border-left: none;
+    border-top: 2px solid rgb(217, 217, 217);
+  }
+
+  /* SECTION EXPERIENCES + SECTION FORMATIONS */
+
+  .grid {
+    display: block;
+  }
+
+  .grid-img img {
+    width: 50%;
+  }
+
+  .grid-text-container {
+    margin-left: 0;
+    display: block;
+  }
+
+  /* SECTION CENTRES D'INTERET */
+
+  .interet {
+    flex: 0 1 50%;
+  }
+}
