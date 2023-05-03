@@ -10,9 +10,9 @@ const scroll = new LocomotiveScroll({
 scroll.on("scroll", () => {
   if (document.querySelector("#color.is-inview")) {
     document.body.style.background = "#000101";
-    document.body.style.color = "#fefeff";
+    document.body.style.color = "#fefeec";
   } else {
-    document.body.style.background = "#fefeff";
+    document.body.style.background = "#fefeec";
     document.body.style.color = "#000101";
   }
 });

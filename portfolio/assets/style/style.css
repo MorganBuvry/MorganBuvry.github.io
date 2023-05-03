@@ -51,7 +51,7 @@ body {
 h2 {
   font-size: calc(2rem + 5vw);
   text-align: center;
-  color: rgb(217, 217, 217);
+  color: rgb(201, 197, 197);
   font-family: "manrope-bold", serif;
   letter-spacing: 3px;
 }
@@ -359,5 +359,5 @@ footer a:hover::after {
 }
 
 .img2 {
-  background: url(../images/Question-mark.jpg) center/cover;
+  background: url(../images/Question-mark.png) center/cover;
 }
