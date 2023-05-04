@@ -262,8 +262,12 @@ header h2 {
 .portfolio h3 {
   font-size: calc(1.5rem + 0.5vw);
   text-align: center;
-  margin: 100px 0 30px;
+  max-width: 600px;
+  margin: 100px auto;
   letter-spacing: 4px;
+  background: #000101;
+  color: #fefeff;
+  padding: 12px 12px;
 }
 
 .projects-container {
