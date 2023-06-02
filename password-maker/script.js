@@ -14,7 +14,9 @@ function generatePassword() {
   if (numbers.checked) data.push(...dataNumbers);
   if (symbols.checked) data.push(...dataSymbols);
 
-  if (data.length === 0) alert("Veuillez sélectionner au moins 1 critère");
+  if (data.length === 0) {
+    alert("Veuillez sélectionner au moins un critère");
+  }
 
   for (i = 0; i < rangeValue.value; i++) {
     password += data[Math.floor(Math.random() * data.length)];
@@ -23,7 +25,7 @@ function generatePassword() {
   passwordInput.value = password;
 
   passwordInput.select();
-  document.execCommand("copy");
+  navigator.clipboard.writeText(passwordInput.value);
 
   generateButton.textContent = "Copié ! ";
 
