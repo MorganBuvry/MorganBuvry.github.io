@@ -161,7 +161,7 @@ footer a:hover {
 }
 
 .footer-social i {
-  font-size: calc(0.7rem + 0.7vw);
+  font-size: calc(0.7rem + 0.55vw);
 }
 
 #facebook:hover {
