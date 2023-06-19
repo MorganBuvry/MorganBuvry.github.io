@@ -73,6 +73,7 @@
 .picture img {
   width: 80%;
   border-radius: 10px;
+  max-width: 450px;
 }
 
 /* Section skills */
