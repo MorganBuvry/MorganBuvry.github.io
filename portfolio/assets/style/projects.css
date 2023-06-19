@@ -1,0 +1,136 @@
+.section {
+  padding: 6.4rem 0;
+}
+
+#index .projects {
+  padding-bottom: 9.6rem;
+}
+
+#index .projects .project:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.project-details {
+  display: flex;
+  gap: 3.2rem;
+  list-style-type: none;
+  margin-bottom: 3.2rem;
+}
+
+.project-detail {
+  flex: 1;
+}
+
+.h4 {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.project-assets-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.project-description {
+  flex: 1;
+}
+
+.project-description p:nth-child(2) {
+  margin: 25px 0;
+}
+
+.project-description p {
+  line-height: 25px;
+}
+
+.project-description a,
+.project-description a:visited,
+.projectLink a,
+.projectLinka:visited {
+  border-bottom: 1px solid #f4f4f4;
+  transition: 0.4s;
+  position: relative;
+  color: #f4f4f4;
+}
+
+.project-description a:hover,
+.projectLink a:hover {
+  color: rgb(145, 145, 145);
+  border-bottom: 1px solid rgb(145, 145, 145);
+}
+
+.project-description span {
+  font-size: 1.35rem;
+  margin-left: 5px;
+}
+
+.project-assets {
+  flex: 2;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.project-asset {
+  position: relative;
+}
+
+.project-asset img {
+  height: auto;
+  object-fit: cover;
+  width: 90%;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.projectLink {
+  display: none;
+  margin-top: 35px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 800px) {
+  .project-assets-container {
+    display: block;
+    text-align: center;
+  }
+
+  .project-details-technos {
+    display: none;
+  }
+
+  .project-details-date {
+    text-align: right;
+  }
+
+  .project-description {
+    margin-bottom: 30px;
+  }
+
+  .project-description .descriptionLink {
+    display: none;
+  }
+
+  .projectLink {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .section {
+    padding-top: 5rem;
+  }
+
+  #index .projects .project:not(:last-child) {
+    margin-bottom: 7.5rem;
+  }
+
+  .project-assets {
+    display: block;
+  }
+
+  .project-asset {
+    margin: 25px 0;
+  }
+}

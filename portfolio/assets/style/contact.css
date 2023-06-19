@@ -1,0 +1,67 @@
+body {
+  overflow: hidden;
+}
+
+.section-contact {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-links {
+  list-style-type: none;
+}
+
+.contact-link {
+  font-size: clamp(3.5rem, 3vw, 10rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contact-link a,
+.contact-link a:visited {
+  color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.contact-link-text {
+  transform: translate(2.3rem);
+  transition: transform 0.5s ease-out;
+}
+
+.contact-link-icon {
+  opacity: 0;
+  font-size: clamp(4rem, 3vw, 10rem);
+  margin-left: 1rem;
+  transform: translateY(100%);
+  animation: arrow 0.5s ease-out;
+  transition: 0.5s ease;
+}
+
+.contact-link:hover .contact-link-text {
+  transform: translate(0);
+}
+
+.contact-link:hover .contact-link-icon {
+  opacity: 1;
+  transform: translateY(-7px);
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
