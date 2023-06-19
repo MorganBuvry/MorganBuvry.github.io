@@ -225,7 +225,8 @@
   }
 
   .about-details,
-  .interets {
+  .interets,
+  .skills-list {
     display: block;
   }
 
