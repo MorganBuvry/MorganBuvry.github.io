@@ -223,4 +223,14 @@
   .picture img {
     width: 70%;
   }
+
+  .about-details,
+  .interets {
+    display: block;
+  }
+
+  .experiences,
+  .formations {
+    margin: 50px 0;
+  }
 }
